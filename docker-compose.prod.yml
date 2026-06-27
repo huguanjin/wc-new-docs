@@ -1,6 +1,6 @@
 services:
   docs:
-    image: ghcr.io/liuyucen-ai/new-docs:latest
+    image: ghcr.io/huguanjin/wc-new-docs:latest
     ports:
       - "8080:80"
     restart: unless-stopped

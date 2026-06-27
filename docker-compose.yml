@@ -1,8 +1,6 @@
 services:
   docs:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/huguanjin/wc-new-docs:latest
     ports:
       - "8080:80"
     restart: unless-stopped
@@ -12,9 +10,9 @@ services:
     ports:
       - "4000:4000"
     environment:
-      - ADMIN_USERNAME=${ADMIN_USERNAME:-admin}
-      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin123}
-      - JWT_SECRET=${JWT_SECRET:-change-me-in-production}
+      - ADMIN_USERNAME=admin
+      - ADMIN_PASSWORD=admin123
+      - JWT_SECRET=change-me-in-production
       - DOCS_ROOT=/docs-site
       - ADMIN_PORT=4000
     volumes:
