@@ -1,0 +1,46 @@
+{
+  "title": {
+    "message": "Webchannel",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Webchannel Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.navbar.docs": {
+    "message": "navbar.docs",
+    "description": "Navbar item with label navbar.docs"
+  },
+  "item.label.navbar.api": {
+    "message": "navbar.api",
+    "description": "Navbar item with label navbar.api"
+  },
+  "item.label.navbar.blog": {
+    "message": "navbar.blog",
+    "description": "Navbar item with label navbar.blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.navbar.admin": {
+    "message": "navbar.admin",
+    "description": "Navbar item with label navbar.admin"
+  },
+  "item.label.Documentation": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Admin": {
+    "message": "Admin",
+    "description": "Navbar item with label Admin"
+  }
+}

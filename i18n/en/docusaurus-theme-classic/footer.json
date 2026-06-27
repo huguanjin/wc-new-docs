@@ -1,0 +1,74 @@
+{
+  "link.title.footer.docs": {
+    "message": "footer.docs",
+    "description": "The title of the footer links column with title=footer.docs in the footer"
+  },
+  "link.title.footer.community": {
+    "message": "footer.community",
+    "description": "The title of the footer links column with title=footer.community in the footer"
+  },
+  "link.title.footer.more": {
+    "message": "footer.more",
+    "description": "The title of the footer links column with title=footer.more in the footer"
+  },
+  "link.item.label.footer.gettingStarted": {
+    "message": "footer.gettingStarted",
+    "description": "The label of footer link with label=footer.gettingStarted linking to /docs/getting-started/installation"
+  },
+  "link.item.label.footer.features": {
+    "message": "footer.features",
+    "description": "The label of footer link with label=footer.features linking to /docs/guide/features"
+  },
+  "link.item.label.footer.api": {
+    "message": "footer.api",
+    "description": "The label of footer link with label=footer.api linking to /api-reference"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/QuantumNous/new-api"
+  },
+  "link.item.label.Apifox Docs": {
+    "message": "Apifox Docs",
+    "description": "The label of footer link with label=Apifox Docs linking to https://ppf3lcwzqr.apifox.cn/"
+  },
+  "link.item.label.footer.blog": {
+    "message": "footer.blog",
+    "description": "The label of footer link with label=footer.blog linking to /blog"
+  },
+  "link.item.label.Docker Hub": {
+    "message": "Docker Hub",
+    "description": "The label of footer link with label=Docker Hub linking to https://hub.docker.com/r/calciumion/new-api"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 QuantumNous / Webchannel. Built with Docusaurus.",
+    "description": "The footer copyright"
+  },
+  "link.title.Documentation": {
+    "message": "Documentation",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label of footer link with label=Getting Started linking to /docs/getting-started/installation"
+  },
+  "link.item.label.Features": {
+    "message": "Features",
+    "description": "The label of footer link with label=Features linking to /docs/guide/features"
+  },
+  "link.item.label.API Reference": {
+    "message": "API Reference",
+    "description": "The label of footer link with label=API Reference linking to /api-reference"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  }
+}

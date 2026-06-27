@@ -1,0 +1,24 @@
+.layoutRoot {
+  height: calc(100vh - var(--ifm-navbar-height));
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.layoutRoot :global(.main-wrapper) {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.layoutRoot main {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+  height: 100%;
+  overflow: hidden;
+}
+
+.layoutRoot footer {
+  display: none;
+}

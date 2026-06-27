@@ -1,0 +1,35 @@
+{
+  "link.title.Documentation": {
+    "message": "Documentation"
+  },
+  "link.title.Community": {
+    "message": "Communauté"
+  },
+  "link.title.More": {
+    "message": "Plus"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Démarrage"
+  },
+  "link.item.label.Features": {
+    "message": "Fonctionnalités"
+  },
+  "link.item.label.API Reference": {
+    "message": "Référence API"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub"
+  },
+  "link.item.label.Apifox Docs": {
+    "message": "Docs Apifox"
+  },
+  "link.item.label.Docker Hub": {
+    "message": "Docker Hub"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 QuantumNous / Webchannel. Propulsé par Docusaurus."
+  }
+}

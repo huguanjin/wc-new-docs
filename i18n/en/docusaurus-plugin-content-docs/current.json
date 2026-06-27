@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guide": {
+    "message": "Guide",
+    "description": "The label for category 'Guide' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Support": {
+    "message": "Support",
+    "description": "The label for category 'Support' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "API Reference",
+    "description": "The label for category 'API Reference' in sidebar 'docsSidebar'"
+  }
+}

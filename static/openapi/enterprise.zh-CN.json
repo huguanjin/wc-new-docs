@@ -1,0 +1,423 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "企业级 AI 网关 API",
+    "description": "统一接入 OpenAI、Claude、Gemini、Midjourney、Suno 等 40+ AI 服务。",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://your-gateway.com",
+      "description": "Webchannel 网关"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "API 密钥：Bearer YOUR_API_KEY"
+      }
+    }
+  },
+  "paths": {
+    "/v1/chat/completions": {
+      "post": {
+        "operationId": "post_____________",
+        "summary": "创建聊天创作图 （非流）",
+        "tags": [
+          "OpenAI 格式"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "给定一个提示，该模型将返回一个或多个预测的完成，并且还可以返回每个位置的替代标记的概率。\n\n为提供的提示和参数创建完成\n\n官方文档：https://platform.openai.com/docs/api-reference/images/create",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/completions": {
+      "post": {
+        "operationId": "POST__v1_completions",
+        "summary": "创建完成",
+        "tags": [
+          "OpenAI 格式"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "给定一个提示，该模型将返回一个或多个预测的完成，并且还可以返回每个位置的替代标记的概率。\n\n为提供的提示和参数创建完成\n\nhttps://platform.openai.com/docs/api-reference/completions",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/embeddings": {
+      "post": {
+        "operationId": "POST__v1_embeddings",
+        "summary": "文本向量化",
+        "tags": [
+          "OpenAI 格式"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "获取给定输入文本的向量表示，这些向量可以被机器学习模型和算法轻松使用。\n需要使用支持embedding的模型，支持批量向量化操作：text-embedding-3-small，text-embedding-3-large",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/images/edits": {
+      "post": {
+        "operationId": "post_gpt_image_2___",
+        "summary": "gpt-image-2图生图",
+        "tags": [
+          "OpenAI 格式"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "model：模型名称   gpt-image-2 官方名称，gpt-image-2 逆向\nprompt：提示词输入\n\nsize 的参数为：\nPopular sizes 常用尺码\n1024x1024 (square)\n\n1536x1024 (landscape)\n\n1024x1536 (portrait)\n\n2048x2048 (2K square)\n\n2048x1152 (2K landscape)\n\n3840x2160 (4K landscape)\n\n2160x3840 (4K portrait)\nauto (default)\n\nquality：质量\nlow\nmedium\nhigh\nauto\n\ninput_fidelity：\nlow\nmedium\nhigh\nauto\n\nresponse_format:出参格式 url 和 base64，当前只支持 base64 出参\nimage：传入图片，base64 和 url 均可",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/images/generations": {
+      "post": {
+        "operationId": "POST__v1_images_generations",
+        "summary": "gpt-image-2 文生图",
+        "tags": [
+          "OpenAI 格式"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "model：模型名称   gpt-image-2 官方名称，gpt-image-2 逆向\nprompt：提示词输入\n\nsize 的参数为：\nPopular sizes 常用尺码\n\n1024x1024 (square)\n\n1536x1024 (landscape)\n\n1024x1536 (portrait)\n\n2048x2048 (2K square)\n\n2048x1152 (2K landscape)\n\n3840x2160 (4K landscape)\n\n2160x3840 (4K portrait)\nauto (default)\n\nquality：质量\nlow\nmedium\nhigh\nauto\n\ninput_fidelity：\nlow\nmedium\nhigh\nauto\n\nresponse_format:出参格式 url 和 base64，当前只支持 base64 出参\nimage：传入图片，base64 和 url 均可",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/messages": {
+      "post": {
+        "operationId": "post_____",
+        "summary": "分析图片",
+        "tags": [
+          "Anthropic 格式"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "对图片进行分析\n只支持claude系列模型",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/models": {
+      "get": {
+        "operationId": "get_____",
+        "summary": "列出模型",
+        "tags": [
+          "OpenAI 格式"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "给定一个提示，该模型将返回一个或多个预测的完成，并且还可以返回每个位置的替代标记的概率。\n\n为提供的提示和参数创建完成"
+      }
+    },
+    "/v1/responses": {
+      "post": {
+        "operationId": "post________________",
+        "summary": "创建模型响应 (控制思考长度)",
+        "tags": [
+          "OpenAI 格式"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "https://platform.openai.com/docs/api-reference/responses/create\n部分OpenAI模型仅支持Response格式，例如o3-pro，codex-mini-latest",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/gemini-2.5-pro:streamGenerateContent": {
+      "post": {
+        "operationId": "POST__v1beta_models_gemini_2_5_pro_streamGenerateContent",
+        "summary": "文本生成+思考-流",
+        "tags": [
+          "谷歌 Gemini 接口"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "官方文档：https://ai.google.dev/gemini-api/docs/text-generation?hl=zh-cn#multi-turn-conversations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/gemini-3-pro-preview:streamGenerateContent": {
+      "post": {
+        "operationId": "POST__v1beta_models_gemini_3_pro_preview_streamGenerateContent",
+        "summary": "文本生成-流",
+        "tags": [
+          "谷歌 Gemini 接口"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "官方文档：https://ai.google.dev/gemini-api/docs/text-generation?hl=zh-cn#multi-turn-conversations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/imagen-4.0-generate-001:predict": {
+      "post": {
+        "operationId": "POST__v1beta_models_imagen_4_0_generate_001_predict",
+        "summary": "Imagen 4 开发中",
+        "tags": [
+          "谷歌 Gemini 接口"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "官方文档：https://ai.google.dev/gemini-api/docs/image-generation?hl=zh-cn",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/{model-name}:generateContent": {
+      "post": {
+        "operationId": "post______",
+        "summary": "图片理解",
+        "tags": [
+          "谷歌 Gemini 接口"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "官方文档：https://ai.google.dev/gemini-api/docs/image-understanding?hl=zh-cn",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/{module_name}:streamGenerateContent": {
+      "post": {
+        "operationId": "POST__v1beta_models__module_name__streamGenerateContent",
+        "summary": "文本生成",
+        "tags": [
+          "谷歌 Gemini 接口"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功"
+          },
+          "401": {
+            "description": "未授权"
+          },
+          "429": {
+            "description": "超出速率限制"
+          }
+        },
+        "description": "官方文档：https://ai.google.dev/gemini-api/docs/text-generation?hl=zh-cn#multi-turn-conversations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

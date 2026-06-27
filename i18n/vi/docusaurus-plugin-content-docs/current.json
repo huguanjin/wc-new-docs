@@ -1,0 +1,14 @@
+{
+  "sidebar.docsSidebar.category.Getting Started": {
+    "message": "Bắt đầu"
+  },
+  "sidebar.docsSidebar.category.Guide": {
+    "message": "Hướng dẫn"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "Tham chiếu API"
+  },
+  "sidebar.docsSidebar.category.Support": {
+    "message": "Hỗ trợ"
+  }
+}

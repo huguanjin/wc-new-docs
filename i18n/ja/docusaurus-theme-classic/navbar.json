@@ -1,0 +1,17 @@
+{
+  "item.label.Documentation": {
+    "message": "ドキュメント"
+  },
+  "item.label.API": {
+    "message": "API"
+  },
+  "item.label.Blog": {
+    "message": "ブログ"
+  },
+  "item.label.Admin": {
+    "message": "管理"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "link.title.Documentation": {
+    "message": "Документация"
+  },
+  "link.title.Community": {
+    "message": "Сообщество"
+  },
+  "link.title.More": {
+    "message": "Ещё"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Начало работы"
+  },
+  "link.item.label.Features": {
+    "message": "Возможности"
+  },
+  "link.item.label.API Reference": {
+    "message": "Справочник API"
+  },
+  "link.item.label.Blog": {
+    "message": "Блог"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub"
+  },
+  "link.item.label.Apifox Docs": {
+    "message": "Документация Apifox"
+  },
+  "link.item.label.Docker Hub": {
+    "message": "Docker Hub"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 QuantumNous / Webchannel. Создано на Docusaurus."
+  }
+}

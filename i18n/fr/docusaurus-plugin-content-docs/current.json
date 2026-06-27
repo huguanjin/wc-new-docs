@@ -1,0 +1,14 @@
+{
+  "sidebar.docsSidebar.category.Getting Started": {
+    "message": "Démarrage"
+  },
+  "sidebar.docsSidebar.category.Guide": {
+    "message": "Guide"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "Référence API"
+  },
+  "sidebar.docsSidebar.category.Support": {
+    "message": "Support"
+  }
+}

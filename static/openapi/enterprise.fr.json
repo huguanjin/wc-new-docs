@@ -1,0 +1,423 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "API Passerelle IA Entreprise",
+    "description": "API unifiée pour OpenAI, Claude, Gemini, Midjourney, Suno et 40+ fournisseurs IA.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://your-gateway.com",
+      "description": "Passerelle Webchannel"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Clé API : Bearer YOUR_API_KEY"
+      }
+    }
+  },
+  "paths": {
+    "/v1/chat/completions": {
+      "post": {
+        "operationId": "post_____________",
+        "summary": "Créer une complétion de chat (non-streaming, text-to-image)",
+        "tags": [
+          "Format OpenAI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Documentation officielle: https://platform.openai.com/docs/api-reference/images/create",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/completions": {
+      "post": {
+        "operationId": "POST__v1_completions",
+        "summary": "Create completion",
+        "tags": [
+          "Format OpenAI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Documentation officielle: https://platform.openai.com/docs/api-reference/completions",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/embeddings": {
+      "post": {
+        "operationId": "POST__v1_embeddings",
+        "summary": "Créer des embeddings",
+        "tags": [
+          "Format OpenAI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Créer des embeddings.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/images/edits": {
+      "post": {
+        "operationId": "post_gpt_image_2___",
+        "summary": "Modifier une image (image-to-image, image editing)",
+        "tags": [
+          "Format OpenAI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Modifier une image (image-to-image, image editing).",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/images/generations": {
+      "post": {
+        "operationId": "POST__v1_images_generations",
+        "summary": "Text-to-image (gpt-image-2)",
+        "tags": [
+          "Format OpenAI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Text-to-image (gpt-image-2).",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/messages": {
+      "post": {
+        "operationId": "post_____",
+        "summary": "Créer un message (vision)",
+        "tags": [
+          "Format Anthropic"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Créer un message (vision).",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/models": {
+      "get": {
+        "operationId": "get_____",
+        "summary": "Lister les modèles",
+        "tags": [
+          "Format OpenAI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Lister les modèles."
+      }
+    },
+    "/v1/responses": {
+      "post": {
+        "operationId": "post________________",
+        "summary": "Créer une réponse (raisonnement, reasoning effort)",
+        "tags": [
+          "Format OpenAI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Documentation officielle: https://platform.openai.com/docs/api-reference/responses/create",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/gemini-2.5-pro:streamGenerateContent": {
+      "post": {
+        "operationId": "POST__v1beta_models_gemini_2_5_pro_streamGenerateContent",
+        "summary": "Stream generate content (raisonnement)",
+        "tags": [
+          "Google Gemini"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Documentation officielle: https://ai.google.dev/gemini-api/docs/text-generation?hl=zh-cn#multi-turn-conversations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/gemini-3-pro-preview:streamGenerateContent": {
+      "post": {
+        "operationId": "POST__v1beta_models_gemini_3_pro_preview_streamGenerateContent",
+        "summary": "Stream generate content",
+        "tags": [
+          "Google Gemini"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Documentation officielle: https://ai.google.dev/gemini-api/docs/text-generation?hl=zh-cn#multi-turn-conversations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/imagen-4.0-generate-001:predict": {
+      "post": {
+        "operationId": "POST__v1beta_models_imagen_4_0_generate_001_predict",
+        "summary": "Imagen 4 (preview)",
+        "tags": [
+          "Google Gemini"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Documentation officielle: https://ai.google.dev/gemini-api/docs/image-generation?hl=zh-cn",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/{model-name}:generateContent": {
+      "post": {
+        "operationId": "post______",
+        "summary": "Generate content (vision)",
+        "tags": [
+          "Google Gemini"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Documentation officielle: https://ai.google.dev/gemini-api/docs/image-understanding?hl=zh-cn",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/{module_name}:streamGenerateContent": {
+      "post": {
+        "operationId": "POST__v1beta_models__module_name__streamGenerateContent",
+        "summary": "Text generation",
+        "tags": [
+          "Google Gemini"
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse réussie"
+          },
+          "401": {
+            "description": "Non autorisé"
+          },
+          "429": {
+            "description": "Limite de débit dépassée"
+          }
+        },
+        "description": "Documentation officielle: https://ai.google.dev/gemini-api/docs/text-generation?hl=zh-cn#multi-turn-conversations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "sidebar.docsSidebar.category.Getting Started": {
+    "message": "快速开始"
+  },
+  "sidebar.docsSidebar.category.Guide": {
+    "message": "使用指南"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "API 参考"
+  },
+  "sidebar.docsSidebar.category.Support": {
+    "message": "帮助支持"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "item.label.Documentation": {
+    "message": "文件"
+  },
+  "item.label.API": {
+    "message": "API"
+  },
+  "item.label.Blog": {
+    "message": "部落格"
+  },
+  "item.label.Admin": {
+    "message": "管理"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub"
+  }
+}

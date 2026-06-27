@@ -1,0 +1,652 @@
+{
+  "navbar.docs": {
+    "message": "Docs",
+    "description": "Navbar docs link"
+  },
+  "navbar.api": {
+    "message": "API",
+    "description": "Navbar API link"
+  },
+  "navbar.blog": {
+    "message": "Blog",
+    "description": "Navbar blog link"
+  },
+  "navbar.admin": {
+    "message": "Admin",
+    "description": "Navbar admin link"
+  },
+  "footer.docs": {
+    "message": "Documentation",
+    "description": "Footer docs section"
+  },
+  "footer.gettingStarted": {
+    "message": "Getting Started",
+    "description": "Footer getting started link"
+  },
+  "footer.features": {
+    "message": "Features",
+    "description": "Footer features link"
+  },
+  "footer.api": {
+    "message": "API Reference",
+    "description": "Footer API link"
+  },
+  "footer.community": {
+    "message": "Community",
+    "description": "Footer community section"
+  },
+  "footer.more": {
+    "message": "More",
+    "description": "Footer more section"
+  },
+  "footer.blog": {
+    "message": "Blog",
+    "description": "Footer blog link"
+  },
+  "homepage.getStarted": {
+    "message": "快速开始"
+  },
+  "homepage.apiReference": {
+    "message": "API 参考"
+  },
+  "homepage.tagline": {
+    "message": "新一代大模型网关与 AI 资产管理系统"
+  },
+  "features.gateway.title": {
+    "message": "统一 LLM 网关"
+  },
+  "features.gateway.desc": {
+    "message": "聚合 40+ AI 提供商于单一 OpenAI 兼容 API，支持智能路由与自动重试。"
+  },
+  "features.billing.title": {
+    "message": "计费与配额"
+  },
+  "features.billing.desc": {
+    "message": "追踪用量、管理配额、集成支付，为组织配置灵活的计费策略。"
+  },
+  "features.i18n.title": {
+    "message": "多语言"
+  },
+  "features.i18n.desc": {
+    "message": "文档和控制台支持英语、中文、法语、日语、俄语和越南语。"
+  },
+  "features.security.title": {
+    "message": "企业级安全"
+  },
+  "features.security.desc": {
+    "message": "OAuth、OIDC、WebAuthn、令牌分组、速率限制和全面的访问控制。"
+  },
+  "features.dashboard.title": {
+    "message": "数据分析面板"
+  },
+  "features.dashboard.desc": {
+    "message": "可视化控制台，包含用量统计、渠道监控和详细请求日志。"
+  },
+  "features.convert.title": {
+    "message": "格式转换"
+  },
+  "features.convert.desc": {
+    "message": "在 OpenAI、Claude Messages 和 Google Gemini 格式之间无缝转换。"
+  },
+  "api.title": {
+    "message": "API 参考"
+  },
+  "api.description": {
+    "message": "企业级 AI 网关，共 135 个接口。支持 Apifox 在线调试与 Redoc 浏览。"
+  },
+  "api.openNewTab": {
+    "message": "打开 Apifox（在线调试）"
+  },
+  "admin.loginTitle": {
+    "message": "管理员登录"
+  },
+  "admin.loginDesc": {
+    "message": "登录后可编辑文档内容。公开页面无需登录即可访问。"
+  },
+  "admin.panelTitle": {
+    "message": "文档管理"
+  },
+  "admin.panelDesc": {
+    "message": "编辑 Markdown 文档。保存后重新构建站点以发布更新。"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "This page crashed.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archive",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archive",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog list page navigation",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Newer entries",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Older entries",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "View all tags",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog post page navigation",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Newer post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Older post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "system mode",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "light mode",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "dark mode",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Switch between dark and light mode (currently {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Docs pages",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Previous",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Next",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "One doc tagged|{count} docs tagged",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} with \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "latest version",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
+  },
+  "theme.common.editThisPage": {
+    "message": "Edit this page",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direct link to {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " on {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " by {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Last updated{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.NotFound.title": {
+    "message": "Page Not Found",
+    "description": "The title of the 404 page"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Close",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.admonition.caution": {
+    "message": "caution",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "danger",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "note",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(opens in new tab)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.NotFound.p1": {
+    "message": "We could not find what you were looking for.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Languages",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "On this page",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copy",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copied",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copy code to clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Read more",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Read more about {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Back to main menu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Expand the dropdown",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Collapse the dropdown",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.blog.post.plurals": {
+    "message": "One post|{count} posts",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} tagged with \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Authors",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "View all authors",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Draft page",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Try again",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Skip to main content",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  },
+  "homepage.stat.endpoints": {
+    "message": "API 接口"
+  },
+  "homepage.stat.categories": {
+    "message": "分类"
+  },
+  "homepage.stat.providers": {
+    "message": "AI 提供商"
+  },
+  "homepage.stat.languages": {
+    "message": "语言"
+  },
+  "homepage.features.title": {
+    "message": "为什么选择 New API？"
+  },
+  "homepage.features.desc": {
+    "message": "部署和管理 AI 服务所需的一切。"
+  },
+  "homepage.apiSection.title": {
+    "message": "探索 135+ API 接口"
+  },
+  "homepage.apiSection.desc": {
+    "message": "OpenAI、Claude、Gemini、Midjourney、Suno 等，统一网关接入。"
+  },
+  "homepage.apiSection.link": {
+    "message": "查看完整 API 参考 →"
+  },
+  "api.loading": {
+    "message": "正在加载交互式 API 文档…"
+  },
+  "api.redocError": {
+    "message": "无法渲染交互式 API 文档，请下载 OpenAPI 文件或查看分类文档。"
+  },
+  "api.downloadOpenapi": {
+    "message": "下载 OpenAPI"
+  },
+  "api.stat.endpoints": {
+    "message": "接口"
+  },
+  "api.stat.categories": {
+    "message": "分类"
+  },
+  "api.stat.providers": {
+    "message": "提供商"
+  },
+  "api.browseCategories": {
+    "message": "按分类浏览"
+  },
+  "api.browseCategoriesDesc": {
+    "message": "点击分类查看带示例的详细文档。"
+  },
+  "api.interactiveSpec": {
+    "message": "交互式 OpenAPI 规范"
+  },
+  "api.interactiveSpecDesc": {
+    "message": "Redoc 渲染的完整规范，已适配当前语言。"
+  },
+  "api.badge.apis": {
+    "message": "个接口"
+  },
+  "api.cat.models": {
+    "message": "模型列表"
+  },
+  "api.cat.models.desc": {
+    "message": "列出可用模型"
+  },
+  "api.cat.openai": {
+    "message": "OpenAI"
+  },
+  "api.cat.openai.desc": {
+    "message": "对话、Responses、图像、音频"
+  },
+  "api.cat.anthropic": {
+    "message": "Anthropic"
+  },
+  "api.cat.anthropic.desc": {
+    "message": "Claude Messages API"
+  },
+  "api.cat.gemini": {
+    "message": "Google Gemini"
+  },
+  "api.cat.gemini.desc": {
+    "message": "generateContent 与流式"
+  },
+  "api.cat.nanobanana": {
+    "message": "NanoBanana"
+  },
+  "api.cat.nanobanana.desc": {
+    "message": "Gemini 图像变体"
+  },
+  "api.cat.midjourney": {
+    "message": "Midjourney"
+  },
+  "api.cat.midjourney.desc": {
+    "message": "MJ 代理任务"
+  },
+  "api.cat.doubaoVideo": {
+    "message": "豆包视频"
+  },
+  "api.cat.doubaoVideo.desc": {
+    "message": "Seedance 视频生成"
+  },
+  "api.cat.doubaoImage": {
+    "message": "豆包绘画"
+  },
+  "api.cat.doubaoImage.desc": {
+    "message": "Seedream 图像生成"
+  },
+  "api.cat.flux": {
+    "message": "Flux"
+  },
+  "api.cat.flux.desc": {
+    "message": "Flux Kontext Max"
+  },
+  "api.cat.jimeng": {
+    "message": "即梦 AI"
+  },
+  "api.cat.jimeng.desc": {
+    "message": "Seedream 4.5 与任务 API"
+  },
+  "api.cat.rerank": {
+    "message": "Rerank"
+  },
+  "api.cat.rerank.desc": {
+    "message": "文档重排序"
+  },
+  "api.cat.suno": {
+    "message": "Suno 音乐"
+  },
+  "api.cat.suno.desc": {
+    "message": "AI 音乐生成"
+  },
+  "site.title": {
+    "message": "Webchannel"
+  },
+  "homepage.metaDescription": {
+    "message": "Webchannel 官方文档 — 统一 LLM 网关，支持 OpenAI、Claude、Gemini 等 40+ AI 提供商。"
+  },
+  "api.metaDescription": {
+    "message": "交互式 API 参考 — 135 个接口，涵盖 OpenAI、Claude、Gemini、Midjourney、Suno 等。"
+  },
+  "admin.username": {
+    "message": "用户名"
+  },
+  "admin.password": {
+    "message": "密码"
+  },
+  "admin.loginButton": {
+    "message": "登录"
+  },
+  "admin.logout": {
+    "message": "退出登录"
+  },
+  "admin.save": {
+    "message": "保存"
+  },
+  "admin.saved": {
+    "message": "保存成功！"
+  },
+  "admin.loadFailed": {
+    "message": "加载文档失败。"
+  },
+  "admin.saveFailed": {
+    "message": "保存失败"
+  },
+  "admin.selectDoc": {
+    "message": "选择文档进行编辑"
+  },
+  "admin.docsList": {
+    "message": "文档列表 ({locale})"
+  },
+  "dev.localeUnavailable.title": {
+    "message": "该语言在开发模式下不可用"
+  },
+  "dev.localeUnavailable.body": {
+    "message": "开发服务器一次只能加载一种语言。当前运行的是 {current}，你访问的是 {requested}。"
+  },
+  "dev.localeUnavailable.howToFix": {
+    "message": "解决方法"
+  },
+  "dev.localeUnavailable.option1": {
+    "message": "方式 1 — 开发 {requested}："
+  },
+  "dev.localeUnavailable.option2": {
+    "message": "方式 2 — 预览全部语言（推荐）："
+  },
+  "dev.localeUnavailable.thenOpen": {
+    "message": "然后访问 {url}"
+  },
+  "dev.localeHint.cannotSwitch": {
+    "message": "开发模式下无法直接切换语言（会触发运行时错误）。"
+  },
+  "dev.localeHint.currentTarget": {
+    "message": "当前运行：{current} → 目标：{target}"
+  },
+  "dev.localeHint.options": {
+    "message": "可选方案："
+  },
+  "dev.localeHint.option1": {
+    "message": "1) 在新终端运行：{cmd}"
+  },
+  "dev.localeHint.option2": {
+    "message": "2) 预览全部语言：npm run preview"
+  },
+  "api.gptImage.field.model": {
+    "message": "模型名称，固定填 gpt-image-2。"
+  },
+  "api.gptImage.field.prompt": {
+    "message": "提示词。尺寸、比例和风格请写在此处（唯一控制尺寸的方式），例如「横版 16:9 电影画幅…」「竖版 9:16 手机壁纸…」。建议把尺寸描述放在 prompt 最前面。"
+  },
+  "api.gptImage.field.response_format": {
+    "message": "响应格式：b64_json（默认，返回已含 data:image/png;base64, 前缀的 base64 字符串）或 url（返回 CDN 链接）。"
+  }
+}

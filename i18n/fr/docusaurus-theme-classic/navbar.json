@@ -1,0 +1,17 @@
+{
+  "item.label.Documentation": {
+    "message": "Documentation"
+  },
+  "item.label.API": {
+    "message": "API"
+  },
+  "item.label.Blog": {
+    "message": "Blog"
+  },
+  "item.label.Admin": {
+    "message": "Admin"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub"
+  }
+}

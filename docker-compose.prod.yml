@@ -1,0 +1,22 @@
+services:
+  docs:
+    image: ghcr.io/liuyucen-ai/new-docs:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  admin:
+    image: node:22-alpine
+    ports:
+      - "4000:4000"
+    environment:
+      - ADMIN_USERNAME=${ADMIN_USERNAME:-admin}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin123}
+      - JWT_SECRET=${JWT_SECRET:-change-me-in-production}
+      - DOCS_ROOT=/docs-site
+      - ADMIN_PORT=4000
+    volumes:
+      - .:/docs-site:rw
+    working_dir: /docs-site/admin-server
+    command: sh -c "npm install --omit=dev && node index.js"
+    restart: unless-stopped

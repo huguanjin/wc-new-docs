@@ -1,0 +1,35 @@
+{
+  "link.title.Documentation": {
+    "message": "ドキュメント"
+  },
+  "link.title.Community": {
+    "message": "コミュニティ"
+  },
+  "link.title.More": {
+    "message": "その他"
+  },
+  "link.item.label.Getting Started": {
+    "message": "はじめに"
+  },
+  "link.item.label.Features": {
+    "message": "機能"
+  },
+  "link.item.label.API Reference": {
+    "message": "API リファレンス"
+  },
+  "link.item.label.Blog": {
+    "message": "ブログ"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub"
+  },
+  "link.item.label.Apifox Docs": {
+    "message": "Apifox ドキュメント"
+  },
+  "link.item.label.Docker Hub": {
+    "message": "Docker Hub"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 QuantumNous / Webchannel. Docusaurus で構築。"
+  }
+}

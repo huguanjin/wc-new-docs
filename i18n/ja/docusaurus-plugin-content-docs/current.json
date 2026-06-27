@@ -1,0 +1,14 @@
+{
+  "sidebar.docsSidebar.category.Getting Started": {
+    "message": "はじめに"
+  },
+  "sidebar.docsSidebar.category.Guide": {
+    "message": "ガイド"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "API リファレンス"
+  },
+  "sidebar.docsSidebar.category.Support": {
+    "message": "サポート"
+  }
+}

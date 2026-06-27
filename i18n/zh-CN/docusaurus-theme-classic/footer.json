@@ -1,0 +1,35 @@
+{
+  "link.title.Documentation": {
+    "message": "文档"
+  },
+  "link.title.Community": {
+    "message": "社区"
+  },
+  "link.title.More": {
+    "message": "更多"
+  },
+  "link.item.label.Getting Started": {
+    "message": "快速开始"
+  },
+  "link.item.label.Features": {
+    "message": "功能特性"
+  },
+  "link.item.label.API Reference": {
+    "message": "API 参考"
+  },
+  "link.item.label.Blog": {
+    "message": "博客"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub"
+  },
+  "link.item.label.Apifox Docs": {
+    "message": "Apifox 文档"
+  },
+  "link.item.label.Docker Hub": {
+    "message": "Docker Hub"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 QuantumNous / Webchannel. 基于 Docusaurus 构建。"
+  }
+}

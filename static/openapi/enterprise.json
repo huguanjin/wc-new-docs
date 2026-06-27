@@ -1,0 +1,423 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Enterprise AI Gateway API",
+    "description": "Unified API for OpenAI, Claude, Gemini, Midjourney, Suno, and 40+ AI providers.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://your-gateway.com",
+      "description": "Webchannel Gateway"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "API Key: Bearer YOUR_API_KEY"
+      }
+    }
+  },
+  "paths": {
+    "/v1/chat/completions": {
+      "post": {
+        "operationId": "post_____________",
+        "summary": "Create chat completion (non-streaming, text-to-image)",
+        "tags": [
+          "OpenAI Format"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "Official documentation: https://platform.openai.com/docs/api-reference/images/create",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/completions": {
+      "post": {
+        "operationId": "POST__v1_completions",
+        "summary": "Create completion",
+        "tags": [
+          "OpenAI Format"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "Official documentation: https://platform.openai.com/docs/api-reference/completions",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/embeddings": {
+      "post": {
+        "operationId": "POST__v1_embeddings",
+        "summary": "Create embeddings",
+        "tags": [
+          "OpenAI Format"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "Create embeddings.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/images/edits": {
+      "post": {
+        "operationId": "post_gpt_image_2___",
+        "summary": "Create image edit (image-to-image, image editing)",
+        "tags": [
+          "OpenAI Format"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "Create image edit (image-to-image, image editing).",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/images/generations": {
+      "post": {
+        "operationId": "POST__v1_images_generations",
+        "summary": "Text-to-image (gpt-image-2)",
+        "tags": [
+          "OpenAI Format"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "Text-to-image (gpt-image-2).",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/messages": {
+      "post": {
+        "operationId": "post_____",
+        "summary": "Create message (vision)",
+        "tags": [
+          "Anthropic Format"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "Create message (vision).",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/models": {
+      "get": {
+        "operationId": "get_____",
+        "summary": "List models",
+        "tags": [
+          "OpenAI Format"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "List models."
+      }
+    },
+    "/v1/responses": {
+      "post": {
+        "operationId": "post________________",
+        "summary": "Create response (reasoning)",
+        "tags": [
+          "OpenAI Format"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "Official documentation: https://platform.openai.com/docs/api-reference/responses/create",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/gemini-2.5-pro:streamGenerateContent": {
+      "post": {
+        "operationId": "POST__v1beta_models_gemini_2_5_pro_streamGenerateContent",
+        "summary": "Stream generate content (reasoning)",
+        "tags": [
+          "Google Gemini"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "Official documentation: https://ai.google.dev/gemini-api/docs/text-generation?hl=zh-cn#multi-turn-conversations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/gemini-3-pro-preview:streamGenerateContent": {
+      "post": {
+        "operationId": "POST__v1beta_models_gemini_3_pro_preview_streamGenerateContent",
+        "summary": "Stream generate content",
+        "tags": [
+          "Google Gemini"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "Official documentation: https://ai.google.dev/gemini-api/docs/text-generation?hl=zh-cn#multi-turn-conversations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/imagen-4.0-generate-001:predict": {
+      "post": {
+        "operationId": "POST__v1beta_models_imagen_4_0_generate_001_predict",
+        "summary": "Imagen 4 (preview)",
+        "tags": [
+          "Google Gemini"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "Official documentation: https://ai.google.dev/gemini-api/docs/image-generation?hl=zh-cn",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/{model-name}:generateContent": {
+      "post": {
+        "operationId": "post______",
+        "summary": "Generate content (vision)",
+        "tags": [
+          "Google Gemini"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "Official documentation: https://ai.google.dev/gemini-api/docs/image-understanding?hl=zh-cn",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1beta/models/{module_name}:streamGenerateContent": {
+      "post": {
+        "operationId": "POST__v1beta_models__module_name__streamGenerateContent",
+        "summary": "Text generation",
+        "tags": [
+          "Google Gemini"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "description": "Official documentation: https://ai.google.dev/gemini-api/docs/text-generation?hl=zh-cn#multi-turn-conversations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

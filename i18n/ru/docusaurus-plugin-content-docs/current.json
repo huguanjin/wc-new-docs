@@ -1,0 +1,14 @@
+{
+  "sidebar.docsSidebar.category.Getting Started": {
+    "message": "Начало работы"
+  },
+  "sidebar.docsSidebar.category.Guide": {
+    "message": "Руководство"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "Справочник API"
+  },
+  "sidebar.docsSidebar.category.Support": {
+    "message": "Поддержка"
+  }
+}
